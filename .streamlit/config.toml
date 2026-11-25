@@ -1,0 +1,62 @@
+# Light and dark themes (structure follows Streamlit's "shadcn-dual" template).
+# Switch in the app: top-right menu (⋮) → Settings → Light / Dark / Use system setting.
+
+[theme]
+# Shared by both modes
+font = "'Inter':https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+codeFont = "'JetBrains Mono':https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"
+codeFontSize = "0.875rem"
+baseFontSize = 15
+headingFontWeights = [600, 600, 600, 600, 600, 600]
+baseRadius = "0.6rem"
+buttonRadius = "0.5rem"
+showWidgetBorder = true
+showSidebarBorder = true
+
+[theme.light]
+primaryColor = "#2F6FED"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F3F5F9"
+codeBackgroundColor = "#F3F5F9"
+textColor = "#1A2233"
+linkColor = "#2F6FED"
+borderColor = "#DDE3EC"
+dataframeBorderColor = "#DDE3EC"
+dataframeHeaderBackgroundColor = "#F3F5F9"
+
+[theme.dark]
+primaryColor = "#4C8DFF"
+backgroundColor = "#0B0F17"
+secondaryBackgroundColor = "#141A24"
+codeBackgroundColor = "#10151F"
+textColor = "#E6E9EF"
+linkColor = "#7AA8FF"
+borderColor = "#232B38"
+dataframeBorderColor = "#232B38"
+dataframeHeaderBackgroundColor = "#141A24"
+dataframeHeaderTextColor = "#E6E9EF"
+
+[theme.light.sidebar]
+backgroundColor = "#F7F9FC"
+secondaryBackgroundColor = "#EDF1F7"
+codeBackgroundColor = "#EDF1F7"
+textColor = "#1A2233"
+borderColor = "#DDE3EC"
+primaryColor = "#2F6FED"
+linkColor = "#2F6FED"
+
+[theme.dark.sidebar]
+backgroundColor = "#0F141D"
+secondaryBackgroundColor = "#182030"
+codeBackgroundColor = "#182030"
+textColor = "#E6E9EF"
+borderColor = "#232B38"
+primaryColor = "#4C8DFF"
+linkColor = "#7AA8FF"
+
+[client]
+# "viewer" keeps the light/dark switch in the menu and hides developer-only buttons.
+toolbarMode = "viewer"
+
+[browser]
+gatherUsageStats = false
